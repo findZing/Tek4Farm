@@ -14,13 +14,14 @@ const SignupPage = () => {
         <InputForm placeholder="Mật khẩu" />
         <InputForm placeholder="Nhập lại mật khẩu" />
 
-        <div className="w-full flex flex-col items-start justify-center">
-          <div>
-            <input type="radio" value="Nông dân" />
+        <div className="w-full flex flex-col items-start justify-center gap-[10px]">
+          <span className="text-[16px] font-[600]">Bạn là:</span>
+          <div className="flex flex-row items-center gap-[10px]">
+            <input type="radio" value="Nông dân" className="w-[20px] h-[20px]"/>
             <span>Nông dân</span>
           </div>
           <div>
-            <input type="radio" value="Thương nhân" />
+            <input type="radio" value="Thương nhân" className="w-[20px] h-[20px]"/>
             <span>Thương nhân</span>
           </div>
         </div>
