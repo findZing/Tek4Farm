@@ -3,13 +3,16 @@ import Form from '@/components/Form'
 import InputForm from '@/components/InputForm'
 import More from '@/components/More'
 import { useRouter } from 'next/router'
-import React from 'react'
+import React, { useState } from 'react'
 
 import bg from '../../public/assets/images/bgLogin.jpg'
 
 const LoginPage = () => {
   const router = useRouter()
   
+  const [phoneValue, setPhoneValue] = useState('')
+  const [passwordValue, setPasswordValue] = useState('')
+
   const handleClickToHome = () => {
     router.push('/')
   }
@@ -28,8 +31,8 @@ const LoginPage = () => {
       className='flex-1 w-screen h-screen flex justify-center items-center'
     >
         <Form title='Đăng nhập'>
-            <InputForm placeholder='Số điện thoại'/>
-            <InputForm placeholder='Mật khẩu'/>
+            <InputForm placeholder='Số điện thoại' value={phoneValue} setValue={setPhoneValue} />
+            <InputForm placeholder='Mật khẩu' type='password' value={passwordValue} setValue={setPasswordValue} />
             <div className='w-full flex flex-row justify-end'>
                 <button>
                     <p className='italic text-[14px]'>Quên mật khẩu ?</p>

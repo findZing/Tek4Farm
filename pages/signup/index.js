@@ -61,11 +61,13 @@ const SignupPage = () => {
           />
           <InputForm
             placeholder="Mật khẩu"
+            type="password"
             value={passwordValue}
             setValue={setPasswordValue}
           />
           <InputForm
             placeholder="Nhập lại mật khẩu"
+            type="password"
             value={passwordAgainValue}
             setValue={setPasswordAgainValue}
           />
