@@ -34,8 +34,8 @@ const SignupPage = () => {
   };
 
   const handleClickToLogin = () => {
-    router.push('/login')
-  }
+    router.push("/login");
+  };
 
   return (
     <div
@@ -114,7 +114,11 @@ const SignupPage = () => {
             </div>
           )}
           <ButtonForm text="Đăng ký" handleClick={handleClickNextStep} />
-          <More textMore="Bạn đã có tài khoản?" textBtnMore="Đăng nhập" handleClick={handleClickToLogin}/>
+          <More
+            textMore="Bạn đã có tài khoản?"
+            textBtnMore="Đăng nhập"
+            handleClick={handleClickToLogin}
+          />
         </Form>
       )}
 
@@ -125,7 +129,13 @@ const SignupPage = () => {
           handleClickHeaderButton={handleClickBackStep}
         >
           <InputForm
-            placeholder="Nhập mã xác nhận"
+            placeholder="Nhập mã xác nhận qua số điện thoại"
+            value={validateValue}
+            setValue={setValidateValue}
+          />
+
+          <InputForm
+            placeholder="Nhập mã xác nhận qua mail"
             value={validateValue}
             setValue={setValidateValue}
           />

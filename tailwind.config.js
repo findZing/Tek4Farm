@@ -9,7 +9,18 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      height: {
+        'navbar': '50px'
+      },
+      maxWidth: {
+        window: '1200px'
+      },
+      backgroundColor: {
+        yellow: '#F7EC00',
+        green: '#CC33CC'
+      }
+    },
   },
   plugins: [],
 }
