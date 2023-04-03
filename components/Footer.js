@@ -7,7 +7,7 @@ const Footer = () => {
 
         <div className='flex flex-col items-center gap-[10px]'>
           <span>Liên hệ với chúng tôi tại:</span>
-          <span>InfoFarmer@InfoFarmer.com</span>
+          <span>InforFarmer@InforFarmer.com</span>
         </div>
     </div>
   )

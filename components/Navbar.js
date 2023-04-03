@@ -22,7 +22,7 @@ const Navbar = () => {
         <div className="flex flex-row items-center gap-[10px]">
           <Image src={logo} className="w-[40px] h-[40px] object-contain" />
           <p className="text-[30px] font-[600] italic text-[#F7EC00]">
-            InfoFarm
+            InforFarmer
           </p>
         </div>
 
@@ -34,8 +34,9 @@ const Navbar = () => {
         </div>
 
         <select value={optionLanguage} className='focus:outline-none'>
-          <option value="A">Tiếng Việt</option>
-          <option value="B">Tiếng Anh</option>
+          <option value="vi">Tiếng Việt</option>
+          <option value="en">English</option>
+          <option value="cn"></option>
         </select>
         <div className="flex flex-row items-center gap-[10px]">
           <button onClick={handleToLogin}>
