@@ -8,7 +8,7 @@ const Layout = ({children}) => {
       <div className='h-[50px]'>
         <Navbar />
       </div>
-        <div className='w-full h-full'>
+        <div className='max-w-window w-full h-full py-[20px]'>
             {children}
         </div>
         <Footer/>
