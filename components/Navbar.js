@@ -28,15 +28,17 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 right-0 left-0 h-[88px] shadow-md bg-white z-20">
       <div className="max-w-window w-full h-full mx-auto flex flex-col">
-      <div className="w-full h-navbar flex flex-row items-center justify-between bg-white">
-        <div className="flex flex-row items-center gap-[10px]">
+      <div className="w-full h-navbar flex flex-row gap-[10px] items-center justify-between bg-white">
+        <div className="w-[200px] flex flex-row items-center gap-[10px]">
           <Image src={logo} className="w-[40px] h-[40px] object-contain" />
-          <p className="text-[30px] font-[600] italic text-[#F7EC00]">
+          <div>
+          <p className="w-[200px] text-[30px] font-[600] italic text-[#F7EC00] z-20">
             InfoFarmer
           </p>
+          </div>
         </div>
 
-        <div className="border border-black rounded-[10px] max-w-[800px] w-full h-[40px] flex items-center justify-between gap-[10px] py-[6px] pl-[20px]">
+        <div className="z-10 border border-black rounded-[10px] max-w-[800px] w-full h-[40px] flex items-center justify-between gap-[10px] py-[6px] pl-[20px]">
           <AiOutlineSearch size={20}/>
           <input
             className="flex-1 text-[14px] focus:outline-none"
