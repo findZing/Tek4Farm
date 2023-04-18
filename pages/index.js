@@ -3,19 +3,16 @@ import Layout from "@/components/Layout";
 import Image from "next/image";
 import React from "react";
 
-import banner from '../public/assets/images/banner.jpg'
+import banner from "../public/assets/images/banner.jpg";
 
 export default function Home() {
   return (
     <Layout>
-      <div className="w-full flex flex-row justify-center bg-black">
-      <Image 
-        src={banner}
-        className="w-full h-[500px] container"
-      />
+      <div className="max-w-content w-full mx-auto flex flex-row justify-between gap-[20px]">
+        <Image src={banner} className="w-[70%] h-[300px] object-cover rounded-[12px]" />
+        <Image src={banner} className="w-[30%] h-[300px] object-cover rounded-[12px]" />
       </div>
       <ContentHome />
-
     </Layout>
   );
 }

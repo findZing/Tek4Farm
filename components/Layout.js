@@ -5,7 +5,7 @@ import Navbar from './Navbar'
 const Layout = ({children}) => {
   return (
     <div className='w-full h-full flex flex-col items-center bg-window'>
-      <div className='h-[50px]'>
+      <div className='h-[88px]'>
         <Navbar />
       </div>
         <div className='w-full h-full'>

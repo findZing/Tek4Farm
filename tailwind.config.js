@@ -14,7 +14,8 @@ module.exports = {
         'navbar': '60px'
       },
       maxWidth: {
-        window: '1400px'
+        window: '1400px',
+        content: '1250px'
       },
       backgroundColor: {
         yellow: '#F7EC00',

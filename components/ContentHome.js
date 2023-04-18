@@ -8,8 +8,8 @@ import ListGroup from "./ListGroup";
 
 const ContentHome = () => {
   return (
-    <div className="max-w-window w-full h-full mx-auto flex flex-row gap-[10px] relative">
-      <div className="flex flex-col gap-[20px]">
+    <div className="max-w-content w-full h-full mx-auto flex flex-row gap-[10px] relative">
+      <div className="flex flex-col gap-[20px] pt-[20px]">
         <ListGroup title="Hoa quả" />
         <ListGroup title="Hoa quả" />
         <ListGroup title="Hoa quả" />
