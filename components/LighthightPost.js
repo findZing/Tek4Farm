@@ -18,8 +18,8 @@ const LighthightPost = () => {
       />
 
       <div className="flex-1 h-full flex flex-col items-start gap-[10px]">
-        <h1 className="text-[20px] font-bold">Tên sản phẩm: Sầu riêng</h1>
-        <p>Số lượng: 100 kg</p>
+        <h1 className="text-[20px] font-bold w-full text-center">Sầu riêng</h1>
+        <p>Sản lượng: 100 kg</p>
         <p>Trạng thái: Đang thu hoạch</p>
         <p>Mô tả: Đây là đặc sản của Việt Nam ...</p>
       </div>

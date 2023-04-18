@@ -17,7 +17,7 @@ const Post = () => {
 
       <div className="flex-1 h-full flex flex-col items-start gap-[10px]">
         <h1 className="text-[20px] font-bold text-center w-full">Sầu riêng</h1>
-        <p className="text-[16px]">Số lượng: 100 kg</p>
+        <p className="text-[16px]">Sản lượng: 100 kg</p>
         <p>Trạng thái: Đang thu hoạch</p>
         <p>Mô tả: Đây là đặc sản của Việt Nam ...</p>
       </div>
