@@ -27,7 +27,7 @@ const Navbar = () => {
 
   return (
     <div className="fixed top-0 right-0 left-0 h-[88px] shadow-md bg-white z-20">
-      <div className="max-w-window w-full h-full mx-auto ">
+      <div className="max-w-window w-full h-full mx-auto flex flex-col">
       <div className="w-full h-navbar flex flex-row items-center justify-between bg-white">
         <div className="flex flex-row items-center gap-[10px]">
           <Image src={logo} className="w-[40px] h-[40px] object-contain" />
@@ -86,6 +86,13 @@ const Navbar = () => {
             </div>
           )}
         </div>
+      </div>
+      <div className="w-full flex flex-row items-center justify-center gap-[10px]">
+          <p className="text-[14px] text-[#808089]">Sầu riêng</p>
+          <p className="text-[14px] text-[#808089]">Sầu riêng</p>
+          <p className="text-[14px] text-[#808089]">Sầu riêng</p>
+          <p className="text-[14px] text-[#808089]">Sầu riêng</p>
+          <p className="text-[14px] text-[#808089]">Sầu riêng</p>
       </div>
       </div>
     </div>
