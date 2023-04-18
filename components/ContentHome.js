@@ -9,18 +9,255 @@ import ListGroup from "./ListGroup";
 const DATA_LIST_GROUP = [
   {
     title: 'Rau củ',
+    content: {
+      hightlight: [
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        }
+      ],
+      normal: [
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        
+      ]
+    }
   },
   {
     title: 'Hoa quả',
+    content: {
+      hightlight: [
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        }
+      ],
+      normal: [
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        
+      ]
+    }
   },
   {
-    title: 'Thảo dược'
+    title: 'Thảo dược',
+    content: {
+      hightlight: [
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        }
+      ],
+      normal: [
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        {
+          title: '',
+          status: '',
+          quantity: '',
+          description: ''
+        },
+        
+      ]
+    }
   }
 ]
 const ContentHome = () => {
 
   const showListGroup = () => {
-    return DATA_LIST_GROUP.map((item, index) => <ListGroup index={index} title={item.title}/>)
+    return DATA_LIST_GROUP.map((item, index) => <ListGroup index={index} title={item.title} content={item.content}/>)
   }
   return (
     <div className="max-w-content w-full h-full mx-auto flex flex-row gap-[10px] relative">

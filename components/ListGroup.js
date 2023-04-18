@@ -5,7 +5,36 @@ import Image from "next/image";
 import Post from './Post';
 import LighthightPost from './LighthightPost';
 
-const ListGroup = ({title}) => {
+const ListGroup = ({title, content}) => {
+
+  const showListHightLightPost = () => {
+    return content.hightlight.map((item, index) => (<LighthightPost title={item.title} quantity={item.quantity} status={item.status} description={item.description} />))
+  }
+
+  const addList = (component) => {
+
+    return (
+      <div className='w-full flex flex-row justify-between'>
+        {component}
+      </div>
+    )
+  }
+  const showListNormalPost = () => {
+    const list = []
+    let listSub = []
+    for(let i = 0; i < content.normal.length; i++)
+    {
+      listSub.push(<Post title={content.normal[i].title} quantity={content.normal[i].quantity} status={content.normal[i].status} description={content.normal[i].description}/>)
+
+      if(i%5 == 4 || i == content.normal.length - 1) {
+        list.push(addList(listSub))
+        listSub = []
+      }
+    }
+
+    return list
+  }
+
   return (
     <div className='w-[1250px] flex flex-col gap-[20px] bg-white px-[20px] py-[10px] rounded-[30px]'>
         <div className='flex flex-row items-center gap-[10px]'>
@@ -13,12 +42,10 @@ const ListGroup = ({title}) => {
         {/* <div className='flex-1 h-[1px] border-t border-black'/> */}
         </div>
         <div className='w-full flex flex-row items-center justify-between gap-[20px]'>
-        <LighthightPost />
-        <LighthightPost />
-
+        {showListHightLightPost()}
         </div>
         <div className="w-full flex flex-row flex-wrap gap-[20px]">
-            <div className='w-full flex flex-row justify-between'>
+            {/* <div className='w-full flex flex-row justify-between'>
               <Post />
               <Post />
               <Post />
@@ -31,7 +58,9 @@ const ListGroup = ({title}) => {
               <Post />
               <Post />
               <Post />
-            </div>
+            </div> */}
+
+            {showListNormalPost()}
         </div>
       </div>
   )

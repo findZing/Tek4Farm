@@ -45,7 +45,7 @@ const Navbar = () => {
             placeholder="Tìm kiếm nông sản bạn cần"
           />
           <div className="w-[100px] h-full flex justify-center items-center border-l border-black">
-            <p>Tìm kiếm</p>
+            <p className="text-[18px] font-[500] text-[#4db849]">Tìm kiếm</p>
           </div>
         </div>
 

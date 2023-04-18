@@ -9,6 +9,7 @@ import {FaCarrot, FaAppleAlt} from 'react-icons/fa'
 import {AiFillSetting} from 'react-icons/ai'
 import {AiFillInfoCircle} from 'react-icons/ai'
 import {IoMdHelpCircle} from 'react-icons/io'
+import {GiTreeRoots} from 'react-icons/gi'
 
 export default function Home() {
   const iconProp = {
@@ -26,6 +27,7 @@ export default function Home() {
         <div className="h-[60px] flex flex-row items-center justify-center gap-[20px] bg-green px-[20px] py-[10px] rounded-[20px]">
           <FaAppleAlt {...iconProp} color='#F7EC00'/>
           <FaCarrot {...iconProp}/>
+          <GiTreeRoots {...iconProp}/>
           <AiFillInfoCircle {...iconProp}/>
           <AiFillSetting {...iconProp}/>
           <IoMdHelpCircle {...iconProp}/>

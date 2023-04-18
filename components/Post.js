@@ -4,7 +4,7 @@ import durian from "../public/assets/images/durian.jpg";
 import {AiOutlineHeart} from 'react-icons/ai'
 import { AiFillHeart } from "react-icons/ai";
 
-const Post = () => {
+const Post = ({title, quantity, status, description}) => {
   const [clickHeart, setClickHeart] = useState(false)
 
   const handleClickHeart = () => {
@@ -16,10 +16,10 @@ const Post = () => {
       <Image src={durian} className="w-[220] h-[220px] object-cover rounded-[10px]" />
 
       <div className="flex-1 h-full flex flex-col items-start gap-[10px]">
-        <h1 className="text-[20px] font-bold text-center w-full">Sầu riêng</h1>
-        <p className="text-[16px]">Sản lượng: 100 kg</p>
-        <p>Trạng thái: Đang thu hoạch</p>
-        <p>Mô tả: Đây là đặc sản của Việt Nam ...</p>
+        <h1 className="text-[20px] font-bold text-center w-full">{title}</h1>
+        <p className="text-[16px]">Sản lượng: {quantity}</p>
+        <p>Trạng thái: {status}</p>
+        <p>Mô tả: {description}</p>
       </div>
 
       <div className="w-[30px] h-[30px] bg-white rounded-[10px] shadow-lg flex items-center justify-center absolute top-[10px] right-[10px]">
