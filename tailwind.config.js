@@ -19,7 +19,7 @@ module.exports = {
       },
       backgroundColor: {
         yellow: '#F7EC00',
-        green: '#CC33CC',
+        green: '#4db849',
         window: '#efefef'
       }
     },
