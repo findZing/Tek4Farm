@@ -11,11 +11,14 @@ const LighthightPost = () => {
   }
 
   return (
-    <div className="w-full h-[250px] border border-black rounded-[20px] px-[20px] py-[10px] flex flex-row items-center justify-between gap-[10px] relative">
-      <Image src={durian} className="w-[220] h-[220px] object-cover" />
+    <div className="w-[50%] h-[250px] border border-black rounded-[20px] px-[20px] py-[10px] flex flex-row items-center justify-between gap-[10px] relative">
+      <Image 
+        src={durian} 
+        className="w-[400] h-[220px] object-cover" 
+      />
 
       <div className="flex-1 h-full flex flex-col items-start gap-[10px]">
-        <h1>Tên sản phẩm: Sầu riêng</h1>
+        <h1 className="text-[20px] font-bold">Tên sản phẩm: Sầu riêng</h1>
         <p>Số lượng: 100 kg</p>
         <p>Trạng thái: Đang thu hoạch</p>
         <p>Mô tả: Đây là đặc sản của Việt Nam ...</p>

@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import logo from "../public/assets/images/logo.png";
 import { HiOutlineUserCircle } from "react-icons/hi";
 import { transitionLanguage } from "@/ulities/transitionLanguage";
+import {AiOutlineSearch} from 'react-icons/ai'
 
 const Navbar = () => {
   const [optionLanguage, setOptionLanguage] = useState();
@@ -25,8 +26,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className="fixed top-0 right-0 left-0 h-[50px] shadow-md bg-white z-20">
-      <div className="max-w-window w-full h-navbar mx-auto flex flex-row items-center justify-between bg-white">
+    <div className="fixed top-0 right-0 left-0 h-[88px] shadow-md bg-white z-20">
+      <div className="max-w-window w-full h-full mx-auto ">
+      <div className="w-full h-navbar flex flex-row items-center justify-between bg-white">
         <div className="flex flex-row items-center gap-[10px]">
           <Image src={logo} className="w-[40px] h-[40px] object-contain" />
           <p className="text-[30px] font-[600] italic text-[#F7EC00]">
@@ -34,11 +36,15 @@ const Navbar = () => {
           </p>
         </div>
 
-        <div className="border-b border-black w-[500px] h-[30px] flex items-center justify-center py-[5px]">
+        <div className="border border-black rounded-[10px] max-w-[800px] w-full h-[40px] flex items-center justify-between gap-[10px] py-[6px] pl-[20px]">
+          <AiOutlineSearch size={20}/>
           <input
             className="flex-1 text-[14px] focus:outline-none"
             placeholder="Tìm kiếm nông sản bạn cần"
           />
+          <div className="w-[100px] h-full flex justify-center items-center border-l border-black">
+            <p>Tìm kiếm</p>
+          </div>
         </div>
 
         <div className="flex flex-row items-center gap-[20px]">
@@ -80,6 +86,7 @@ const Navbar = () => {
             </div>
           )}
         </div>
+      </div>
       </div>
     </div>
   );

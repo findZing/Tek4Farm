@@ -11,14 +11,15 @@ module.exports = {
   theme: {
     extend: {
       height: {
-        'navbar': '50px'
+        'navbar': '60px'
       },
       maxWidth: {
-        window: '1200px'
+        window: '1400px'
       },
       backgroundColor: {
         yellow: '#F7EC00',
-        green: '#CC33CC'
+        green: '#CC33CC',
+        window: '#efefef'
       }
     },
   },

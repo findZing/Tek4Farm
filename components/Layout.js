@@ -4,11 +4,11 @@ import Navbar from './Navbar'
 
 const Layout = ({children}) => {
   return (
-    <div className='w-full h-full flex flex-col items-center'>
+    <div className='w-full h-full flex flex-col items-center bg-window'>
       <div className='h-[50px]'>
         <Navbar />
       </div>
-        <div className='max-w-window w-full h-full py-[20px]'>
+        <div className='w-full h-full'>
             {children}
         </div>
         <Footer/>
