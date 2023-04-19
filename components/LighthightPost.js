@@ -11,7 +11,7 @@ const LighthightPost = ({image, title, quantity, status, description}) => {
   }
 
   return (
-    <div className="w-[50%] h-[250px] border border-black rounded-[20px] px-[20px] py-[10px] flex flex-row items-center justify-between gap-[10px] relative">
+    <div className="w-[50%] h-[250px] shadow-lg border border-black rounded-[20px] px-[20px] py-[10px] flex flex-row items-center justify-between gap-[10px] relative">
       <div className="w-[300px] h-[220px]">
       <Image 
         src={image} 

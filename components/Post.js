@@ -12,7 +12,7 @@ const Post = ({image, title, quantity, status, description}) => {
   }
 
   return (
-    <div className="w-[220px] border border-black rounded-[10px] flex flex-col items-center gap-[10px] px-[10px] py-[10px] relative z-10">
+    <div className="max-w-[220px] w-full shadow-lg border border-black rounded-[10px] flex flex-col items-center gap-[10px] px-[10px] py-[10px] relative z-10">
       <Image src={image} alt={title} className="w-[220] h-[220px] object-cover rounded-[10px]" />
 
       <div className="flex-1 h-full flex flex-col items-start gap-[10px]">
