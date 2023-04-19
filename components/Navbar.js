@@ -30,7 +30,7 @@ const Navbar = () => {
       <div className="max-w-window w-full h-full mx-auto flex flex-col">
       <div className="w-full h-navbar flex flex-row gap-[10px] items-center justify-between bg-white">
         <div className="w-[200px] flex flex-row items-center gap-[10px]">
-          <Image src={logo} className="w-[40px] h-[40px] object-contain" />
+          <Image src={logo} alt="logo" className="w-[40px] h-[40px] object-contain" />
           <div>
           <p className="w-[200px] text-[30px] font-[600] italic text-[#F7EC00] z-20">
             InfoFarmer

@@ -15,6 +15,7 @@ const LighthightPost = ({image, title, quantity, status, description}) => {
       <div className="w-[300px] h-[220px]">
       <Image 
         src={image} 
+        alt={title}
         className="w-[300px] h-[220px] object-cover" 
       />
       </div>

@@ -29,17 +29,17 @@ const Footer = () => {
           <div className='flex flex-col gap-[10px] justify-start'>
           <h1 className='text-[18px] font-bold'>Hình thức thanh toán</h1>
             <div className='flex flex-row items-center justify-between gap-[10px]'>
-              <Image src={logo_visa} className='w-[77px] h-[38px[ object-contain'/>
-              <Image src={logo_master} className='w-[77px] h-[38px[ object-contain'/>
+              <Image src={logo_visa} alt='visa' className='w-[77px] h-[38px[ object-contain'/>
+              <Image src={logo_master} alt='master' className='w-[77px] h-[38px[ object-contain'/>
             </div>            
           </div>
           <div className='flex flex-col gap-[10px] justify-start'>
           <h1 className='text-[18px] font-bold'>Hình thức vận chuyển</h1>
             <div className='flex flex-row items-center justify-between gap-[10px]'>
-              <Image src={nhattin} className='w-[77px] h-[38px[ object-contain'/>
-              <Image src={vnpost} className='w-[77px] h-[38px[ object-contain'/>
+              <Image src={nhattin} alt='nhattin' className='w-[77px] h-[38px[ object-contain'/>
+              <Image src={vnpost} alt='vnpost' className='w-[77px] h-[38px[ object-contain'/>
             </div>
-            <Image src={logo_bct} className='w-[160px] h-[60px[ object-contain'/>
+            <Image src={logo_bct} alt='logo_bct' className='w-[160px] h-[60px[ object-contain'/>
             
           </div>
         </div>
