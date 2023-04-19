@@ -14,7 +14,7 @@ import vai from "./public/assets/images/vai.jpg";
 import bau from "./public/assets/images/bau.jpg";
 import ca_rot from "./public/assets/images/ca_rot.jpg";
 import cai_ngot from "./public/assets/images/cai_ngot.jpg";
-import can_tay from "./public/assets/images/can_tay.png";
+import can_tay from "./public/assets/images/can_tay.PNG";
 import cu_dau from "./public/assets/images/cu_dau.jpg";
 import dua_chuot from "./public/assets/images/dua_chuot.jpg";
 import muop from "./public/assets/images/muop.jpg";
@@ -24,7 +24,7 @@ import san from "./public/assets/images/san.jpg";
 import su_hao from "./public/assets/images/su_hao.jpg";
 import sup_lo from "./public/assets/images/sup_lo.jpg";
 
-import cam_thao from "./public/assets/images/cam_thao.png";
+import cam_thao from "./public/assets/images/cam_thao.PNG";
 import dinh_lang from "./public/assets/images/dinh_lang.jpg";
 import hoang_ky from "./public/assets/images/hoang_ky.jpg";
 import huong_thao from "./public/assets/images/huong_thao.jpg";
@@ -35,7 +35,7 @@ import que from "./public/assets/images/que.jpg";
 import tam_ma from "./public/assets/images/tam_ma.jpg";
 import tam_that from "./public/assets/images/tam_that.jpg";
 import thao_qua from "./public/assets/images/thao_qua.jpg";
-import tra_xanh from "./public/assets/images/tra_xanh.png";
+import tra_xanh from "./public/assets/images/tra_xanh.PNG";
 
 const status_Dang_thu_hoach = "Đang thu hoạch";
 const status_Co_san = "Có sẵn";

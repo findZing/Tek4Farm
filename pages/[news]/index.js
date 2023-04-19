@@ -1,7 +1,7 @@
 import Layout from "@/components/Layout";
 import Image from "next/image";
 import React from "react";
-import image from "../../public/assets/images/durian.jpg";
+import sau_rieng from "../../public/assets/images/sau_rieng.jpg";
 
 const NewsPost = () => {
   return (
