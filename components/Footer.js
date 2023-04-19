@@ -44,6 +44,7 @@ const Footer = () => {
           </div>
         </div>
         <p className='text-[20px] font-bold'>Copyright @ by Tek4Farm</p>
+        <p className='text-[16px] italic'>Version 1.0</p>
     </div>
   )
 }
