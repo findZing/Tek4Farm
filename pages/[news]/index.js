@@ -6,7 +6,7 @@ import sau_rieng from "../../public/assets/images/sau_rieng.jpg";
 const NewsPost = () => {
   return (
     <div className="w-full h-[100px] flex flex-row items-center gap-[15px]">
-      <Image src={image} className="w-[100px] h-[100px] object-cover" />
+      <Image src={sau_rieng} className="w-[100px] h-[100px] object-cover" />
       <div className="h-full flex flex-col items-start justify-between">
         <h1 className="text-[20px] font-bold">
           Sầu riêng đang trở thành món đặc sản của Việt Nam
