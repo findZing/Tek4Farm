@@ -257,7 +257,7 @@ const DATA_LIST_GROUP = [
 const ContentHome = () => {
 
   const showListGroup = () => {
-    return DATA_LIST_GROUP.map((item, index) => <ListGroup index={index} title={item.title} content={item.content}/>)
+    return DATA_LIST_GROUP.map((item, index) => <ListGroup key={index} title={item.title} content={item.content}/>)
   }
   return (
     <div className="max-w-content w-full h-full mx-auto flex flex-row gap-[10px] relative">
