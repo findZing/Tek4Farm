@@ -8,7 +8,7 @@ import {AiOutlineSearch} from 'react-icons/ai'
 
 const Navbar = () => {
   const [optionLanguage, setOptionLanguage] = useState();
-  const language = 'en'
+  const language = 'vi'
 
   const router = useRouter();
   const userLogin = false;

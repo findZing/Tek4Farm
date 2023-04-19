@@ -13,7 +13,7 @@ const ContentHome = () => {
   }
   return (
     <div className="max-w-content w-full h-full mx-auto flex flex-row gap-[10px] relative">
-      <div className="flex flex-col gap-[20px] py-[20px]">
+      <div className="flex flex-col items-center gap-[50px] py-[20px]">
         {
           showListGroup()
         }
