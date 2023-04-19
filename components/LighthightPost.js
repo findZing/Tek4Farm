@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { AiOutlineHeart, AiFillHeart } from "react-icons/ai";
-import durian from "../public/assets/images/durian.jpg";
+// import durian from "../public/assets/images/durian.jpg";
 import Image from "next/image";
 
-const LighthightPost = ({title, quantity, status, description}) => {
+const LighthightPost = ({image, title, quantity, status, description}) => {
   const [clickHeart, setClickHeart] = useState(false);
 
   const handleClickHeart = () => {
@@ -12,10 +12,12 @@ const LighthightPost = ({title, quantity, status, description}) => {
 
   return (
     <div className="w-[50%] h-[250px] border border-black rounded-[20px] px-[20px] py-[10px] flex flex-row items-center justify-between gap-[10px] relative">
+      <div className="w-[300px] h-[220px]">
       <Image 
-        src={durian} 
-        className="w-[400] h-[220px] object-cover" 
+        src={image} 
+        className="w-[300px] h-[220px] object-cover" 
       />
+      </div>
 
       <div className="flex-1 h-full flex flex-col items-start gap-[10px]">
         <h1 className="text-[20px] font-bold w-full text-center">{title}</h1>

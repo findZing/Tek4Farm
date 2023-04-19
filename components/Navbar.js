@@ -91,10 +91,10 @@ const Navbar = () => {
       </div>
       <div className="w-full flex flex-row items-center justify-center gap-[10px]">
           <p className="text-[14px] text-[#808089]">Sầu riêng</p>
-          <p className="text-[14px] text-[#808089]">Sầu riêng</p>
-          <p className="text-[14px] text-[#808089]">Sầu riêng</p>
-          <p className="text-[14px] text-[#808089]">Sầu riêng</p>
-          <p className="text-[14px] text-[#808089]">Sầu riêng</p>
+          <p className="text-[14px] text-[#808089]">Rau cải</p>
+          <p className="text-[14px] text-[#808089]">Ớt</p>
+          <p className="text-[14px] text-[#808089]">Nhân sâm</p>
+          <p className="text-[14px] text-[#808089]">Cam</p>
       </div>
       </div>
     </div>

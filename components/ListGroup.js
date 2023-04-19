@@ -1,5 +1,5 @@
 import React from 'react'
-import durian from "../public/assets/images/durian.jpg";
+// import durian from "../public/assets/images/durian.jpg";
 import {AiOutlineHeart} from 'react-icons/ai'
 import Image from "next/image";
 import Post from './Post';
@@ -8,7 +8,7 @@ import LighthightPost from './LighthightPost';
 const ListGroup = ({title, content}) => {
 
   const showListHightLightPost = () => {
-    return content.hightlight.map((item, index) => (<LighthightPost key={index} title={item.title} quantity={item.quantity} status={item.status} description={item.description} />))
+    return content.hightlight.map((item, index) => (<LighthightPost key={index} image={item.image} title={item.title} quantity={item.quantity} status={item.status} description={item.description} />))
   }
 
   const addList = (component) => {
@@ -24,7 +24,7 @@ const ListGroup = ({title, content}) => {
     let listSub = []
     for(let i = 0; i < content.normal.length; i++)
     {
-      listSub.push(<Post key={i} title={content.normal[i].title} quantity={content.normal[i].quantity} status={content.normal[i].status} description={content.normal[i].description}/>)
+      listSub.push(<Post key={i}  image={content.normal[i].image} title={content.normal[i].title} quantity={content.normal[i].quantity} status={content.normal[i].status} description={content.normal[i].description}/>)
 
       if(i%5 == 4 || i == content.normal.length - 1) {
         list.push(addList(listSub))

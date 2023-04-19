@@ -34,7 +34,16 @@ export default function Home() {
         </div>
       </div>
       <div className="max-w-content w-full mx-auto flex flex-row justify-between gap-[20px] pt-[20px]">
-        <Image src={banner} className="w-[70%] h-[300px] object-cover rounded-[12px]" />
+        <div className="relative w-[70%]">
+          <Image src={banner} className="w-full h-[300px] object-cover rounded-[12px]" />
+          <div className="w-full flex flex-row items-center justify-center gap-[10px] absolute left-0 right-0 bottom-[10px]">
+            <div className="w-[8px] h-[8px] rounded-full bg-white shadow-sm"/>
+            <div className="w-[8px] h-[8px] rounded-full bg-white shadow-sm"/>
+            <div className="w-[8px] h-[8px] rounded-full bg-white shadow-sm"/>
+            <div className="w-[8px] h-[8px] rounded-full bg-white shadow-sm"/>
+            <div className="w-[8px] h-[8px] rounded-full bg-white shadow-sm"/>
+          </div>
+        </div>
         <Image src={banner} className="w-[30%] h-[300px] object-cover rounded-[12px]" />
       </div>
       <ContentHome />
