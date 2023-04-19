@@ -21,6 +21,9 @@ module.exports = {
         yellow: '#F7EC00',
         green: '#4db849',
         window: '#efefef'
+      },
+      borderColor: {
+        yellow: '#F7EC00',
       }
     },
   },
