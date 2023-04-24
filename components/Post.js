@@ -4,6 +4,7 @@ import Image from "next/image";
 import {AiOutlineHeart} from 'react-icons/ai'
 import { AiFillHeart } from "react-icons/ai";
 import {AiOutlineArrowRight} from 'react-icons/ai'
+import ButtonDetails from "./ButtonDetails";
 
 const Post = ({image, title, quantity, status, description}) => {
   const [clickHeart, setClickHeart] = useState(false)
@@ -32,10 +33,11 @@ const Post = ({image, title, quantity, status, description}) => {
         }
       </div>
 
-    <button className="bg-green w-[150px] h-[40px] rounded-[20px] flex flex-row items-center justify-center gap-[5px] px-[5px]">
+    {/* <button className="bg-green w-[150px] h-[40px] rounded-[20px] flex flex-row items-center justify-center gap-[5px] px-[5px]">
       <p className="text-[14px] text-white font-[500]">Thông tin chi tiết</p>
       <AiOutlineArrowRight color="white" size={20}/>
-    </button>
+    </button> */}
+    <ButtonDetails />
     </div>
   );
 };
